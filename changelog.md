@@ -1,1 +1,1 @@
-- 2da0960 Update auto.yml
+- 4e53c4c Merge pull request #4 from KomnisEvangelos/3-create-table
