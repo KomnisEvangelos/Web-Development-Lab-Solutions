@@ -1,0 +1,31 @@
+name: Generate Changelog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate_changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Generate Changelog
+      id: changelog
+      run: |
+        commitMessages=$(git log --format=%s)
+        changelog=$(echo "$commitMessages" | awk '{print "- " $0}')
+        echo "$changelog" > changelog.md
+
+    - name: Commit and Push Changelog
+      run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor }}@users.noreply.github.com"
+        git add changelog.md
+        git commit -m "Add changelog for release"
+        git push origin HEAD:master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
