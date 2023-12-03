@@ -16,8 +16,7 @@ jobs:
     - name: Generate Changelog
       id: changelog
       run: |
-        commitMessages=$(git log --format=%s)
-        changelog=$(echo "$commitMessages" | awk '{print "- " $0}')
+        changelog=$(git log --format="%h %s" --reverse | awk '{print "- " $0}')
         echo "$changelog" > changelog.md
 
     - name: Commit and Push Changelog
