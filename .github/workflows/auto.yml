@@ -17,7 +17,7 @@ jobs:
       id: changelog
       run: |
         changelog=$(git log --format="%h %s" --reverse | awk '{print "- " $0}')
-        echo "$changelog" > changelog.md
+        echo "$changelog" >> changelog.md
 
     - name: Commit and Push Changelog
       run: |
