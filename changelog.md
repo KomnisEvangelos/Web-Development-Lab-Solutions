@@ -1,1 +1,1 @@
-- Merge pull request #2 from KomnisEvangelos/1-my-feedback-form
+- 2da0960 Update auto.yml
