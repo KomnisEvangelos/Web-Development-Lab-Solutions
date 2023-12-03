@@ -1,0 +1,42 @@
+<html>
+
+<head>
+ <title>Solutions</title>
+ <meta charset="utf-8" />
+</head>
+
+<form> 
+ <h1>My feedback form</h1>
+ <form action = "code.php" method = "POST"></form>
+    <ul>
+        <li>Name:<input type="text" name="username" placeholder="Username"></li>            <!-- you can remove placeholder  -->
+        <li>Email:<input type="text" name="email" placeholder="Email"> </li>                <!-- you can remove placeholder  -->
+        <li>Passwords: <input type="password" name="password" placeholder="Password"></li>  <!-- you can remove placeholder  -->
+        <br>
+        <li>Please check all the emotions that apply to you</li>
+            <ul>
+                <li>Angry<input type="checkbox" name="emotion" value="Angry" checked></li>
+                <li>Sad<input type="checkbox" name="emotion" value="Sad"></li>
+                <li>Happy<input type="checkbox" name="emotion" value="Happy"></li>
+                <li>Ambivalent<input type="checkbox" name="emotion" value="Ambivalent"></li>
+            </ul>
+        <li>How satisfied were you with our service</li>
+            <ul>
+                <li>Very satisfied<input type="radio" name="satisfaction" value="Very satisfied"></li>
+                <li>Satisfied<input type="radio" name="satisfaction" value="Satisfied"></li>
+                <li>Didn't care<input type="radio" name="satisfaction" value="Didn't care"></li>
+                <li>Dissatisfied<input type="radio" name="satisfaction" value="Dissatisfied"></li>
+                <li>Very dissatisfied<input type="radio" name="satisfaction" value="Very dissatisfied"></li>
+            </ul>
+        <li>Further comments:<textarea name="comments" placeholder="Comments"></textarea></li>                                  <!-- you can remove placeholder  -->
+        <li>Bio photo:<input type="text" name="photo"> <button>Choose...</button> </li>                                         <!-- <input type="file" name="photo">  -->
+        <li>Location visited: <select name="location"> <option value="noAction" selected>select location</option></select> </li>
+    
+        <!-- In the subject's image, the submit button appears to be positioned slightly to the left of the others. 
+             If this is accurate, then the solution is slightly modified. -->
+        <li><button>submit</button></li>
+    </ul>
+</form>
+</body>
+
+</html>
