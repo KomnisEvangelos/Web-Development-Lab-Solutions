@@ -1,3 +1,4 @@
 - 4e53c4c Merge pull request #4 from KomnisEvangelos/3-create-table
 - 829c750 Update auto.yml
 - 4e672a7 feat: add solution for cv.html based on issue #4
+- 04ea9ce feat: add solution for 3f based on issue #7
