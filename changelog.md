@@ -2,3 +2,4 @@
 - 829c750 Update auto.yml
 - 4e672a7 feat: add solution for cv.html based on issue #4
 - 04ea9ce feat: add solution for 3f based on issue #7
+- 910ae51 feat: create page3g based on issue #9
